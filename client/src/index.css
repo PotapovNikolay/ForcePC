@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .green-line {
+        @apply w-6 h-1.5 rounded-3xl bg-[#00c78d] self-center;
+    }
+
+    .reg-green-line {
+        @apply w-8 h-1.5 rounded-3xl bg-[#00c78d] self-center;
+    }
+
+    .gray-line {
+        @apply w-6 h-1.5 rounded-3xl bg-[#333333] self-center;
+    }
+
+    .reg-gray-line {
+        @apply w-8 h-1.5 rounded-3xl bg-[#333333] self-center;
+    }
+
+    .error-input {
+        @apply invalid:border-pink-500 invalid:text-pink-600
+    }
+
+    .mobile-green-line {
+        @apply w-8 h-1 rounded-3xl bg-[#00c78d] self-center;
+    }
+
+    .mobile-gray-line {
+        @apply w-8 h-1 rounded-3xl bg-[#333333] self-center;
+    }
+
+    .magazin-item-line {
+        @apply w-1 h-[0.85rem] rounded-3xl bg-[#00c78d]  self-center;
+    }
+
+    .custom-line {
+        @apply w-1 h-[1rem] rounded-3xl bg-[#00c78d]  self-center;
+    }
+
+    .listPCNav-green-line {
+        @apply w-7 h-1 bg-[#00c78d] rounded-full self-center
+    }
+
+    .listPCNav-gray-line {
+        @apply w-7 h-1 bg-[#333333] rounded-full self-center
+    }
+
+    .mobile-listPCNav-green-line {
+        @apply w-5 h-[3px] bg-[#00c78d] rounded-full self-center
+    }
+
+    .mobile-listPCNav-gray-line {
+        @apply w-5 h-[3px] bg-[#333333] rounded-full self-center
+    }
+
+    /*.listPCNav-gray-line{*/
+    /*    @apply w-7 h-1 bg-[#333333] rounded-full self-center*/
+    /*}*/
+    .border-green-line {
+        @apply w-[1px] h-48 bg-[#00c78d]  self-center
+    }
+
+    .mobile-magazin-item-line {
+        @apply w-1 h-[1rem] rounded-3xl bg-[#00c78d]  self-center;
+    }
+
+    .store-bg {
+        @apply bg-gradient-to-r from-[#00c78d] to-[#ff70fd];
+        background-image: linear-gradient(to right, rgb(62, 211, 121), rgb(147, 51, 234));
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        /*url("./content/storeLine.svg"),*/
+        background-size: 70%;
+    }
+
+    .store-bg-line {
+        background-image: url("./content/storeLine.svg");
+        background-attachment: fixed;
+    }
+}
+
+/*shadow-[0_3px_10px_0_rgba(50,50,50,0.8)]*/

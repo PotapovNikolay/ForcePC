@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap"
+          rel="stylesheet">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta
+            name="description"
+            content="Web site created using create-react-app"
+    />
+    <title></title>
+    <style>
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px rgb(24, 24, 27) inset;
+            background-color: #ccc;
+            -webkit-text-fill-color: white;
+        }
+
+        input:-webkit-autofill:focus {
+            -webkit-box-shadow: 0 0 0 1000px rgb(24, 24, 27) inset;
+            background-color: #ccc;
+            -webkit-text-fill-color: white;
+        }
+
+        .no-cursor {
+            cursor: none;
+            background-color: wheat;
+        }
+
+        #review-scroll::-webkit-scrollbar {
+            width: 0px;
+            cursor: pointer;
+            height: 10px;
+            /*background-color: rgb(24, 100, 27);*/
+
+        }
+
+        #review-scroll::-webkit-scrollbar-track {
+            /*background-color: rgb(24, 24, 27);*/
+            background-color: rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            height: 10px;
+
+        }
+
+        #review-scroll::-webkit-scrollbar-thumb {
+            cursor: pointer;
+            background-color: rgb(51, 51, 51);
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        #review-scroll::-webkit-scrollbar-thumb:hover {
+            cursor: pointer;
+            background-color: rgb(0, 199, 141);
+            border-radius: 10px;
+            height: 10px;
+        }
+
+        /*@media (min-width: 10px) {*/
+        /*    body {*/
+        /*        -ms-overflow-style: none; !* for Internet Explorer, Edge *!*/
+        /*        scrollbar-width: none; !* for Firefox *!*/
+        /*        overflow-y: scroll;*/
+        /*    }*/
+        /*    body::-webkit-scrollbar {*/
+        /*        display: none; !* for Chrome, Safari, and Opera *!*/
+        /*    }*/
+
+        /*}*/
+
+        @media (min-width: 450px) {
+            .journal-scroll::-webkit-scrollbar-thumb:hover {
+                cursor: pointer;
+                background-color: rgb(0, 199, 141);
+                border-radius: 10px;
+            }
+            .journal-scroll::-webkit-scrollbar-thumb {
+                cursor: pointer;
+                background-color: rgb(51, 51, 51);
+
+                border-radius: 10px;
+            }
+           .journal-scroll::-webkit-scrollbar-track {
+                /*background-color: rgb(24, 24, 27);*/
+                background-color: rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+
+            }
+            .journal-scroll::-webkit-scrollbar {
+                width: 6px;
+                cursor: pointer;
+                height: 90%;
+                /*background-color: rgb(24, 100, 27);*/
+
+            }
+        }
+        body {
+            overflow: overlay;
+        }
+    </style>
+</head>
+<body style='overflow-x:hidden; '  class="relative scroll-smooth snap-y snap-mandatory journal-scroll  ">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div class="bg-zinc-900 relative w-screen overflow-hidden " id="root"></div>
+
+</body>
+</html>
